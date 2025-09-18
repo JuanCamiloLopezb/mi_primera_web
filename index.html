@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Juan Camilo</a>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#acerca-de-mi" class="nav-link">Acerca de mí</a></li>
+                <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="acerca-de-mi" class="section">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h1>Hola, soy Juan Camilo</h1>
+                    <h2>Técnologo en Análisis y Desarrollo de Software</h2>
+                    <p>Soy un profesional apasionado por la tecnología y el desarrollo de soluciones creativas. Me especializo en la creación de sitios web modernos y funcionales, siempre buscando aprender y aplicar las mejores prácticas del sector.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300" alt=>
+                </div>
+            </div>
+        </section>
+
+    <section id="habilidades" class="section bg-light">
+    <div class="container">
+        <h2>Mis Habilidades</h2>
+        <div class="skills-grid">
+            
+            <div class="skill">
+                <div class="skill-header">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="95" style="width: 0%;">95%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="90" style="width: 0%;">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="80" style="width: 0%;">80%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+               
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+        <section id="proyectos" class="section">
+            <div class="container">
+                <h2>Mis Proyectos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="imagenes/logo-sena-verde-complementario-jpg-2022.jpg" alt="Imagen del Proyecto">
+                        <div class="project-info">
+                            <h3>Sistema de Gestión de Aprendices SENA</h3>
+                            <p>Aplicación multiplataforma que centraliza funciones académicas y administrativas para aprendices, instructores y administradores pertenecientes al Nodo TIC del Centro Nacional Colombo Alemán.</p>
+                        </div>
+                    </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section bg-light">
+    <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-info-container">
+            <div class="contact-info-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+573245630448">+57 3245630448</a>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:juancamilo.lopez.0510@gmail.com">juancamilo.lopez.0510@gmail.com</a>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Barranquilla - Colombia</span>
+            </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <small class="error-message"></small>
+            </div>
+            <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Juan Camilo Lopez Borrero.  Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
