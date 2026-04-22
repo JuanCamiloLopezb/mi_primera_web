@@ -1,6 +1,5 @@
-/* ==================== VARIABLES CSS ==================== */
 :root {
-    --primary-color: #007BFF;
+    --primary-color: #1461b4;
     --secondary-color: #6c757d;
     --background-light: #f8f9fa;
     --background-dark: #343a40;
@@ -9,7 +8,6 @@
     --font-family: 'Arial', sans-serif;
 }
 
-/* ==================== ESTILOS GENERALES ==================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,7 +45,7 @@ body {
     background-color: var(--background-light);
 }
 
-/* ==================== HEADER Y NAVEGACIÓN ==================== */
+/* ==================== HEADER ==================== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -324,7 +322,7 @@ body {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 60px; /* Adjust based on header height */
+        top: 60px; 
         flex-direction: column;
         background-color: var(--background-dark);
         width: 100%;
