@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // ==================== MENÚ HAMBURGUESA RESPONSIVE ====================
+    // ==================== MENÚ HAMBURGUESA ====================
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.remove('active');
     }));
 
-    // ==================== BARRAS DE PROGRESO ANIMADAS ====================
+    // ==================== BARRAS DE PROGRESO ====================
     const skillsSection = document.querySelector('#habilidades');
     const progressBars = document.querySelectorAll('.progress');
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.5 // Se activa cuando el 50% de la sección es visible
+        threshold: 0.5
     });
 
     if (skillsSection) {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    // ==================== VALIDACIÓN DE FORMULARIO EN TIEMPO REAL ====================
+    // ==================== VALIDACIÓN DE FORMULARIO ====================
     const form = document.getElementById('contact-form');
     const nombreInput = document.getElementById('nombre');
     const emailInput = document.getElementById('email');
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // validación
     if (form) {
         form.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevenir el envío real del formulario
+            e.preventDefault(); 
 
             let isRequiredValid = checkRequired([nombreInput, emailInput, mensajeInput]);
             let isEmailValid = checkEmail(emailInput);
